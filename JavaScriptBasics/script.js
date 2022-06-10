@@ -34,8 +34,24 @@
 
 //////////////////////////////////////////////////////////////
 
-console.log (Boolean(0))
-console.log (Boolean(""))
-console.log (Boolean(undefined))
-console.log (Boolean(NaN))
-console.log (Boolean(null))
+// console.log (Boolean(0))
+// console.log (Boolean(""))
+// console.log (Boolean(undefined))
+// console.log (Boolean(NaN))
+// console.log (Boolean(null))
+
+//////////////////////////////////////////////////////////////
+
+function colorMixer (color1, color2) {
+    const newColor = `${color1} + ${color2}`
+    return newColor
+}
+
+function colorized (item, color1, color2) {
+    const color = colorMixer (color1, color2)
+    
+    const colorizedItem = `The ${item} is ${color}.`
+    return colorizedItem
+}
+
+console.log (colorized ("car", "red", "orange"))
